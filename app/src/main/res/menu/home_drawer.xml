@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/i1_feeling_monitoring"
+            android:icon="@drawable/icon_monitor"
+            android:title="기분/생활 모니터링" />
+
+        <item
+            android:id="@+id/i2_stress_toolkit"
+            android:icon="@drawable/icon_toolkit"
+            android:title="스트레스 대처 툴킷" />
+
+        <item
+            android:id="@+id/i3_special_program"
+            android:icon="@drawable/icon_special"
+            android:title="특화 프로그램" />
+
+        <item
+            android:id="@+id/i4_emergency"
+            android:icon="@drawable/icon_emergency"
+            android:title="마음 응급실" />
+
+        <item
+            android:id="@+id/i5_community"
+            android:icon="@drawable/icon_community"
+            android:title="커뮤니티" />
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/i6_my_account"
+            android:icon="@drawable/icon_my_account"
+            android:title="내 계정" />
+
+        <item
+            android:id="@+id/i7_settings"
+            android:icon="@drawable/icon_setting"
+            android:title="설정" />
+
+        <item
+            android:id="@+id/i8_logout"
+            android:icon="@drawable/icon_logout"
+            android:title="로그아웃" />
+    </group>
+</menu>

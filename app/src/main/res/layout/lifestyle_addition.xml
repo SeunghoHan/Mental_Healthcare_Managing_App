@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:id="@+id/lifestyle_addition_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center|left"
+        android:text="생활습관 추가"
+        android:textColor="@color/feelings_title_font_color"
+        android:textSize="@dimen/feelings_title_font_size" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lifestyle_addition_title"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent">
+
+        <RelativeLayout
+            android:id="@+id/lifestyle_addition_list_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent">
+
+            <RelativeLayout
+                android:id="@+id/lifestyle_sleep_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@android:color/transparent">
+
+                <ImageView
+                    android:id="@+id/lifestyle_sleep_img"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    app:srcCompat="@drawable/lifestyle_sleep" />
+
+                <TextView
+                    android:id="@+id/lifestyle_sleep_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/lifestyle_sleep_img"
+                    android:gravity="center|left"
+                    android:text="수면"
+                    android:textColor="@color/feelings_title_font_color"
+                    android:textSize="@dimen/feelings_title_font_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lifestyle_appetite_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lifestyle_sleep_layout"
+                android:layout_marginBottom="20dp"
+                android:background="@android:color/transparent">
+
+                <ImageView
+                    android:id="@+id/lifestyle_appetite_img"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    app:srcCompat="@drawable/lifestyle_appetite" />
+
+                <TextView
+                    android:id="@+id/lifestyle_appetite_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/lifestyle_appetite_img"
+                    android:gravity="center|left"
+                    android:text="식욕"
+                    android:textColor="@color/feelings_title_font_color"
+                    android:textSize="@dimen/feelings_title_font_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lifestyle_work_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lifestyle_appetite_layout"
+                android:layout_marginBottom="20dp"
+                android:background="@android:color/transparent">
+
+                <ImageView
+                    android:id="@+id/lifestyle_work_img"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    app:srcCompat="@drawable/lifestyle_work" />
+
+                <TextView
+                    android:id="@+id/lifestyle_work_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/lifestyle_work_img"
+                    android:gravity="center|left"
+                    android:text="학업 및 업무"
+                    android:textColor="@color/feelings_title_font_color"
+                    android:textSize="@dimen/feelings_title_font_size" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/lifestyle_addition_cancel_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@+id/lifestyle_addition_ok_btn"
+        android:text="취소"
+        android:textColor="@color/finding_btn_font_color"
+        android:textSize="@dimen/finding_btn_font_size" />
+
+    <TextView
+        android:id="@+id/lifestyle_addition_ok_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:text="추가하기"
+        android:textColor="@color/finding_btn_font_color"
+        android:textSize="@dimen/finding_btn_font_size" />
+
+</RelativeLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_login">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/lg_butterfly_img"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/img_butterfly" />
+
+        <TextView
+            android:id="@+id/lg_title_top_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/lg_butterfly_img"
+            android:layout_toRightOf="@+id/lg_butterfly_img"
+            android:text="마음"
+            android:textAllCaps="false"
+            android:textColor="@color/lg_title"
+            android:textSize="@dimen/lg_title"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:id="@+id/lg_title_bottom_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lg_butterfly_img"
+            android:layout_below="@+id/lg_butterfly_img"
+            android:layout_marginLeft="18dp"
+            android:text="연습실"
+            android:textColor="@color/lg_title"
+            android:textSize="@dimen/lg_title"
+            android:textStyle="normal|bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:id="@+id/lg_facebook_img"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="49dp"
+            android:src="@drawable/lg_facebook" />
+
+        <ImageView
+            android:id="@+id/lg_twitter_img"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_alignBottom="@+id/lg_facebook_img"
+            android:layout_marginRight="40dp"
+            android:layout_toRightOf="@+id/lg_facebook_img"
+            android:src="@drawable/lg_twitter" />
+
+        <TextView
+            android:id="@+id/lg_other_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="다른 방법으로 로그인"
+            android:textColor="@color/lg_text_find_password"
+            android:textSize="@dimen/lg_find_password" />
+
+        <ImageView
+            android:id="@+id/lg_google_img"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_alignBottom="@+id/lg_twitter_img"
+            android:layout_toRightOf="@+id/lg_twitter_img"
+            android:src="@drawable/lg_google" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/lg_account_img"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/lg_account"
+            app:srcCompat="@drawable/lg_account" />
+
+        <EditText
+            android:id="@+id/lg_account_tf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_toRightOf="@+id/lg_account_img"
+            android:background="@drawable/lg_text_box_roundcorner"
+            android:ems="14"
+            android:hint="아이디"
+            android:inputType="textPersonName"
+            android:textColor="@color/lg_text_box_fond_color"
+            android:textColorHint="@color/lg_text_box_hint_color"
+            android:textSize="@dimen/lg_text_box_font_size" />
+
+        <ImageView
+            android:id="@+id/lg_password_img"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/lg_account_tf"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/lg_password" />
+
+        <EditText
+            android:id="@+id/lg_password_tf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lg_account_tf"
+            android:layout_toRightOf="@+id/lg_password_img"
+            android:background="@drawable/lg_text_box_roundcorner"
+            android:ems="14"
+            android:hint="비밀번호"
+            android:inputType="textPassword"
+            android:textColor="@color/lg_text_box_fond_color"
+            android:textColorHint="@color/lg_text_box_hint_color"
+            android:textSize="@dimen/lg_text_box_font_size" />
+
+        <Button
+            android:id="@+id/lg_register_btn"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_alignEnd="@+id/lg_password_tf"
+            android:layout_below="@+id/lg_password_tf"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_selector_for_login"
+            android:text="등록"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/lg_btn_font_size" />
+
+        <TextView
+            android:id="@+id/lg_find_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/lg_register_btn"
+            android:layout_alignRight="@+id/lg_register_btn"
+            android:layout_below="@+id/lg_register_btn"
+            android:layout_marginTop="15dp"
+            android:text="암호를 잊으셨나요?"
+            android:textColor="@color/lg_text_find_password"
+            android:textSize="@dimen/lg_find_password" />
+
+    </RelativeLayout>
+</RelativeLayout>

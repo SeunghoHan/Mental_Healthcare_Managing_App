@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="application.project.mhm.activities.HomeActivity"
+    tools:showIn="@layout/home_bar">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/home_profile_img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="25dp"
+                app:srcCompat="@drawable/icon_profile" />
+
+            <EditText
+                android:id="@+id/home_profile_intro_tf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="[사용자 입력 문구]"
+                android:inputType="textPersonName"
+                android:textColor="@color/home_profile_intro_tf_font_color"
+                android:textColorHint="@color/home_profile_intro_hint_font_color"
+                android:textSize="@dimen/home_profile_intro_tf_font_size" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:layout_width="160dp"
+                android:layout_height="90dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="13dp"
+                android:background="@drawable/selector_home_state_box"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:id="@+id/home_my_mood_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="[표시정보]"
+                    android:textColor="@color/home_percent_tv_font_color"
+                    android:textSize="@dimen/home_percent_tv_font_size" />
+
+                <TextView
+                    android:id="@+id/home_my_mood_percent_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/home_my_mood_tv"
+                    android:text="[정보제목]"
+                    android:textColor="@color/home_percent_text_tv_font_color"
+                    android:textSize="@dimen/home_percent_text_tv_font_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="160dp"
+                android:layout_height="90dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="13dp"
+                android:background="@drawable/selector_home_state_box"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:id="@+id/home_my_mind_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="[표시정보]"
+                    android:textColor="@color/home_percent_tv_font_color"
+                    android:textSize="@dimen/home_percent_tv_font_size" />
+
+                <TextView
+                    android:id="@+id/home_my_mind_percent_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/home_my_mind_tv"
+                    android:text="[정보제목]"
+                    android:textColor="@color/home_percent_text_tv_font_color"
+                    android:textSize="@dimen/home_percent_text_tv_font_size" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/home_main_bg">
+
+            <LinearLayout
+                android:id="@+id/RL1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/home_main_feeling_monitoring_img"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        app:srcCompat="@drawable/home_monitoring" />
+
+                    <EditText
+                        android:id="@+id/home_main_feeling_monitoring_et"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:enabled="false"
+                        android:text="기분생활 다이어리"
+                        android:textColor="@color/home_main_icon_text_font_color"
+                        android:textSize="@dimen/home_main_icon_text_font_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/home_main_special_program_img"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        app:srcCompat="@drawable/home_toolkit" />
+
+                    <EditText
+                        android:id="@+id/home_main_special_program_et"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:enabled="false"
+                        android:text="마음연습 툴킷"
+                        android:textColor="@color/home_main_icon_text_font_color"
+                        android:textSize="@dimen/home_main_icon_text_font_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/home_main_stress_toolkit_img"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        app:srcCompat="@drawable/home_special" />
+
+                    <EditText
+                        android:id="@+id/home_main_stress_toolkit_et"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:enabled="false"
+                        android:text="특화 프로그램"
+                        android:textColor="@color/home_main_icon_text_font_color"
+                        android:textSize="@dimen/home_main_icon_text_font_size" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/RL1"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="70dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/home_main_my_coach_img"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        app:srcCompat="@drawable/home_emergency" />
+
+                    <EditText
+                        android:id="@+id/home_main_my_coach_et"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:enabled="false"
+                        android:text="마음 응급실"
+                        android:textColor="@color/home_main_icon_text_font_color"
+                        android:textSize="@dimen/home_main_icon_text_font_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="70dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/home_main_community_img"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        app:srcCompat="@drawable/home_community" />
+
+                    <EditText
+                        android:id="@+id/home_main_community_et"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:enabled="false"
+                        android:text="커뮤니티"
+                        android:textColor="@color/home_main_icon_text_font_color"
+                        android:textSize="@dimen/home_main_icon_text_font_size" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="application.project.mhm.activities.SurveyActivity">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/survey_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        <Button
+            android:id="@+id/survey_next_btn"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/selector_survey_button"
+            android:text="다음"
+            android:textColor="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/survey_back_btn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_toLeftOf="@+id/survey_next_btn"
+            android:layout_alignBottom="@+id/survey_next_btn"
+            android:layout_marginRight="10dp"
+            app:srcCompat="@drawable/survey_back_btn" />
+
+</RelativeLayout>

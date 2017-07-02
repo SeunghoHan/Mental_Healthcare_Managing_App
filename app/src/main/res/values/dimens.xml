@@ -1,0 +1,38 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="lg_title">32sp</dimen>
+    <dimen name="lg_btn_font_size">17sp</dimen>
+    <dimen name="lg_find_password">12sp</dimen>
+    <dimen name="lg_text_box_font_size">17sp</dimen>
+
+    <!-- For HomeActivity -->
+    <dimen name="home_nav_profile_intro_tv_font_size">17sp</dimen>
+    <dimen name="home_profile_intro_tf_font_size">17sp</dimen>
+    <dimen name="toolbar_title_font_size">20sp</dimen>
+    <dimen name="home_percent_tv_font_size">30sp</dimen>
+    <dimen name="home_percent_text_tv_font_size">10sp</dimen>
+    <dimen name="home_main_icon_text_font_size">13sp</dimen>
+    <dimen name="dig_content_tv_font_size">16sp</dimen>
+    <dimen name="dig_age_text_font_size">20sp</dimen>
+    <dimen name="dig_age_hint_font_size">20sp</dimen>
+    <dimen name="dig_sub_box_font_size">16sp</dimen>
+
+    <!-- For SurveyActivity -->
+    <dimen name="survey_top_title_tv_font_size">18sp</dimen>
+    <dimen name="survey_top_period_tv_font_size">12sp</dimen>
+    <dimen name="survey_question_tv_font_size">18sp</dimen>
+    <dimen name="survey_state_img_size">5dp</dimen>
+    <dimen name="survey_listview_item_tv_font_size">11sp</dimen>
+
+    <!-- For MonitoringActivity -->
+    <dimen name="feelings_title_font_size">14sp</dimen>
+    <dimen name="feelings_mid_font_size">18sp</dimen>
+    <dimen name="feelings_search_my_mind_font_size">15sp</dimen>
+    <dimen name="feelings_search_my_condition_font_size">15sp</dimen>
+    <dimen name="feelings_condition_content_font_size">14sp</dimen>
+    <dimen name="finding_title_tv_font_size">15sp</dimen>
+    <dimen name="finding_search_font_size">14sp</dimen>
+    <dimen name="finding_btn_font_size">14sp</dimen>
+</resources>

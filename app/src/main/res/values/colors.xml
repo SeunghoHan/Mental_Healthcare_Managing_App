@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="lg_title">#FCFCFC</color>
+    <color name="lg_text_box_hint_color">#e1dfdf</color>
+    <color name="lg_text_box_fond_color">#000000</color>
+    <color name="lg_text_find_password">#FCF6F6</color>
+    <color name="toolbar_title_font_color">#fFFFFF</color>
+
+
+    <!-- For HomeActivity -->
+    <color name="home_bar">#55000000</color>
+    <color name="home_bg_brightness">#303F9F</color>
+    <color name="home_profile_intro_hint_font_color">#e1dfdf</color>
+    <color name="home_profile_intro_tf_font_color">#FFFFFF</color>
+    <color name="home_percent_tv_font_color">#FFFFFF</color>
+    <color name="home_percent_text_tv_font_color">#FFFFFF</color>
+    <color name="home_main_icon_text_font_color">#FFFFFF</color>
+    <color name="home_main_bg">#55000000</color>
+    <color name="dig_content_tv_font_color">#FFFFFF</color>
+    <color name="dig_button_color">#4478B2</color>
+    <color name ="dig_age_text_font_color">#FFFFFF</color>
+    <color name ="dig_age_hint_font_color">#FFFFFF</color>
+
+    <!-- For SurveyActivity -->
+    <color name="survey_top_layout_color">#039BE5</color>
+    <color name="survey_top_title_tv_font_color">#FFFFFF</color>
+    <color name="survey_top_period_tv_font_color">#FCFCFC</color>
+    <color name="survey_question_tv_font_color">#FFFFFF</color>
+    <color name="survey_list_divider">#EFEFEF</color>
+
+    <!-- For MonitoringActivity -->
+    <color name="tab_color">#55000000</color>
+    <color name="tab_font_color">#657D87</color>
+    <color name="tab_selected_font_color">#B8C8CD</color>
+    <color name="feelings_title_font_color">#FFFFFF</color>
+    <color name="feelings_mid_font_color">#FFFFFF</color>
+    <color name="feelings_search_my_mind_hint_background_color">#E1E1E1</color>
+    <color name="feelings_search_my_mind_font_color">#FFFFFF</color>
+    <color name="feelings_search_my_condition_font_color">#FFFFFF</color>
+    <color name="feelings_condition_content_hint_color">#B7B5B5</color>
+    <color name="find_feelings_background">#00000000</color>
+    <color name="finding_title_tv_font_color">#FFFFFF</color>
+    <color name="finding_search_hint_color">#B1B1B1</color>
+    <color name="finding_btn_font_color">#FFFFFF</color>
+    <color name="component_relative_layout_bg">#88000000</color>
+</resources>

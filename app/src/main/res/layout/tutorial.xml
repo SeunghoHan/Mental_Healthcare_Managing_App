@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/dig_box"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:srcCompat="@drawable/tutorial_dialogbox" />
+
+        <ImageView
+            android:id="@+id/dig_butterfly"
+            android:layout_width="130dp"
+            android:layout_height="150dp"
+            android:layout_alignRight="@+id/dig_box"
+            android:layout_below="@+id/dig_box"
+            app:srcCompat="@drawable/tutorial_butterfly" />
+
+        <TextView
+            android:id="@+id/dig_content_tv"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="30dp"
+            android:text=""
+            android:textColor="@color/dig_content_tv_font_color"
+            android:textSize="@dimen/dig_content_tv_font_size" />
+
+        <ImageView
+            android:id="@+id/dig_skip_btn"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dig_content_tv"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/tutorial_skip" />
+
+        <ImageView
+            android:id="@+id/dig_back_btn"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/dig_skip_btn"
+            android:layout_below="@+id/dig_content_tv"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/dig_next_btn"
+            app:srcCompat="@drawable/tutorial_back" />
+
+        <ImageView
+            android:id="@+id/dig_next_btn"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/dig_skip_btn"
+            android:layout_alignRight="@+id/dig_content_tv"
+            android:layout_below="@+id/dig_content_tv"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/turorial_next" />
+
+        <ImageView
+            android:id="@+id/dig_finish_btn"
+            android:layout_alignBottom="@+id/dig_skip_btn"
+            android:layout_alignRight="@+id/dig_content_tv"
+            android:layout_below="@+id/dig_content_tv"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/survey_finish"
+            android:layout_height="wrap_content"
+            android:layout_width="35dp" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingTop="60dp">
+
+            <ImageView
+                android:id="@+id/dig_sub_box1"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                app:srcCompat="@drawable/tutorial_subdialogbox" />
+
+            <TextView
+                android:id="@+id/dig_sub1_tv"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="네! 지금 한번 해볼래요."
+                android:textColor="@color/dig_content_tv_font_color"
+                android:textSize="@dimen/dig_sub_box_font_size" />
+
+            <ImageView
+                android:id="@+id/dig_sub_box2"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/dig_sub_box1"
+                app:srcCompat="@drawable/tutorial_subdialogbox" />
+
+            <TextView
+                android:id="@+id/dig_sub2_tv"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/dig_sub_box1"
+                android:gravity="center"
+                android:text="아니요, 다음에 할게요."
+                android:textColor="@color/dig_content_tv_font_color"
+                android:textSize="@dimen/dig_sub_box_font_size" />
+
+            <EditText
+                android:id="@+id/dig_age_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="@android:color/white"
+                android:ems="6"
+                android:hint="나이"
+                android:inputType="textPersonName"
+                android:maxLength="3"
+                android:textColor="@color/dig_age_text_font_color"
+                android:textColorHint="@color/dig_age_hint_font_color"
+                android:textSize="@dimen/dig_age_hint_font_size" />
+
+            <EditText
+                android:id="@+id/dig_name_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="@android:color/white"
+                android:ems="6"
+                android:hint="별명"
+                android:inputType="textPersonName"
+                android:maxLength="8"
+                android:textColor="@color/dig_age_text_font_color"
+                android:textColorHint="@color/dig_age_hint_font_color"
+                android:textSize="@dimen/dig_age_hint_font_size" />
+
+
+            <ImageView
+                android:id="@+id/dig_male_img"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                app:srcCompat="@drawable/tutorial_gender_male" />
+
+            <ImageView
+                android:id="@+id/dig_female_img"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/dig_male_img"
+                app:srcCompat="@drawable/tutorial_gender_female" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

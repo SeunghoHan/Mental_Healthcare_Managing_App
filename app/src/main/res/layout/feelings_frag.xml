@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/feelings_date_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:alpha=".65"
+            android:foregroundGravity="center"
+            app:srcCompat="@drawable/feelings_monitoring_date_picker_img" />
+
+        <TextView
+            android:id="@+id/feelings_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/feelings_date_img"
+            android:gravity="center|left"
+            android:text="3일전 @@님의 생활을 기록해보세요"
+            android:textColor="@color/feelings_title_font_color"
+            android:textSize="@dimen/feelings_title_font_size" />
+
+        <ImageView
+            android:id="@+id/feelings_graphic_img"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_below="@+id/feelings_title_tv"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/feelings_graphic" />
+
+        <TextView
+            android:id="@+id/feelings_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/feelings_graphic_img"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:text="보통이에요"
+            android:textColor="@color/feelings_mid_font_color"
+            android:textSize="@dimen/feelings_mid_font_size" />
+
+        <net.qiujuer.genius.ui.widget.SeekBar
+            android:id="@+id/feelings_slider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/feelings_tv"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            app:gAllowTrackClickToDrag="false"
+            app:gIndicator="none"
+            app:gMax="4"
+            app:gMin="0"
+            app:gScrubberColor="#FFFFFF"
+            app:gScrubberStroke="4dp"
+            app:gThumbColor="#FFFFFF"
+            app:gThumbSize="7dp"
+            app:gTickSize="5dp"
+            app:gTouchSize="3dp"
+            app:gTrackColor="#D8D8D8"
+            app:gTrackStroke="3dp"
+            app:gValue="2" />
+
+        <EditText
+            android:id="@+id/feelings_search_mind_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/feelings_slider"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/feelings_et_background"
+            android:backgroundTint="@color/feelings_search_my_mind_hint_background_color"
+            android:ems="17"
+            android:enabled="false"
+            android:hint="내 감정 찾기"
+            android:inputType="textPersonName"
+            android:textColor="@color/feelings_search_my_mind_font_color"
+            android:textColorHint="@color/feelings_search_my_mind_font_color"
+            android:textSize="@dimen/feelings_search_my_mind_font_size" />
+
+        <ScrollView
+            android:id="@+id/find_feeling_scroll"
+            android:layout_width="match_parent"
+            android:layout_alignLeft="@+id/feelings_search_mind_et"
+            android:layout_alignRight="@+id/feelings_search_mind_et"
+            android:layout_below="@+id/feelings_search_mind_et"
+            android:background="@android:color/transparent"
+            android:layout_height="60dp">
+
+            <RelativeLayout
+                android:id="@+id/find_feeling_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent">
+
+                <!--<ImageView-->
+                <!--android:id="@+id/find_feeling_img"-->
+                <!--android:layout_width="30dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_marginBottom="5dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:alpha=".65"-->
+                <!--app:srcCompat="@drawable/find_feelings" />-->
+            </RelativeLayout>
+        </ScrollView>
+
+        <EditText
+            android:id="@+id/feelings_my_condition_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/find_feeling_scroll"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/feelings_et_background"
+            android:backgroundTint="@color/feelings_search_my_mind_hint_background_color"
+            android:ems="17"
+            android:enabled="false"
+            android:hint="내 상황"
+            android:inputType="textPersonName"
+            android:textColor="@color/feelings_search_my_condition_font_color"
+            android:textColorHint="@color/feelings_search_my_condition_font_color"
+            android:textSize="@dimen/feelings_search_my_condition_font_size" />
+
+        <EditText
+            android:id="@+id/feelings_condition_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/feelings_my_condition_et"
+            android:layout_below="@+id/feelings_my_condition_et"
+            android:backgroundTint="@android:color/transparent"
+            android:ems="17"
+            android:hint="무슨 일이에요? 여기 한번 적어보세요."
+            android:inputType="textPersonName"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/feelings_condition_content_hint_color"
+            android:textSize="@dimen/feelings_condition_content_font_size" />
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/feelings_save_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="20dp"
+        app:backgroundTint="#687B8F"
+        app:borderWidth="0dp"
+        app:fabSize="mini"
+        app:rippleColor="#688B8F"
+        app:srcCompat="@drawable/feelings_save" />
+
+</RelativeLayout>

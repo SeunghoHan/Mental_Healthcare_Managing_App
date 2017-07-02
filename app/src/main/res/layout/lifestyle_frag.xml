@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/lifestyle_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="19dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/component_relative_layout_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/lifestyle_date_img"
+            android:layout_width="55dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:alpha=".65"
+            android:foregroundGravity="center"
+            app:srcCompat="@drawable/feelings_monitoring_date_picker_img" />
+
+        <TextView
+            android:id="@+id/lifestyle_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/lifestyle_date_img"
+            android:gravity="center|left"
+            android:text="3일전 @@님의 생활을 기록해보세요"
+            android:textColor="@color/feelings_title_font_color"
+            android:textSize="@dimen/feelings_title_font_size" />
+
+        <ImageView
+            android:id="@+id/lifestyle_addition_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            app:srcCompat="@drawable/lifestyle_addtion" />
+
+        <TextView
+            android:id="@+id/lifestyle_addition_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:text="생활습관 추가하기"
+            android:textColor="@color/feelings_title_font_color"
+            android:textSize="@dimen/feelings_title_font_size" />
+
+        <com.xw.repo.BubbleSeekBar
+            android:id="@+id/lifestyle_sleep_sb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:visibility="gone" />
+
+        <com.xw.repo.BubbleSeekBar
+            android:id="@+id/lifestyle_appetite_sb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:visibility="gone" />
+
+        <com.xw.repo.BubbleSeekBar
+            android:id="@+id/lifestyle_work_sb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

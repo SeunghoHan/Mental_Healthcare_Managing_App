@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/find_feelings_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:id="@+id/finding_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="내 감정 찾기"
+        android:textColor="@color/finding_title_tv_font_color"
+        android:textSize="@dimen/finding_title_tv_font_size" />
+
+    <ScrollView
+        android:id="@+id/adding_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignLeft="@+id/finding_title_tv"
+        android:layout_below="@+id/finding_title_tv"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent">
+
+        <RelativeLayout
+            android:id="@+id/finding_feelings_selected_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent">
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <EditText
+        android:id="@+id/finding_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/finding_title_tv"
+        android:layout_below="@+id/adding_scrollview"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/feelings_et_background"
+        android:backgroundTint="@color/feelings_search_my_mind_hint_background_color"
+        android:ems="12"
+        android:hint="검색"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/finding_search_hint_color"
+        android:textSize="@dimen/finding_search_font_size" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_alignLeft="@+id/finding_title_tv"
+        android:layout_below="@+id/finding_search"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent">
+
+        <RelativeLayout
+            android:id="@+id/finding_feelings_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent">
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/finding_cancel_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@+id/finding_ok_btn"
+        android:text="취소"
+        android:textColor="@color/finding_btn_font_color"
+        android:textSize="@dimen/finding_btn_font_size" />
+
+    <TextView
+        android:id="@+id/finding_ok_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:text="확인"
+        android:textColor="@color/finding_btn_font_color"
+        android:textSize="@dimen/finding_btn_font_size" />
+
+
+</RelativeLayout>
